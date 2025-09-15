@@ -1,12 +1,3 @@
-/*-----------------------------------------------------------
-* Template Name    : RectCV - Personal Bootstrap 4 HTML Template
-* Author           : Narek Sukiasyan
-* Version          : 1.0.0
-* Created          : April 2020
-* File Description : Custom functions file for theme
-*--
-*/
-
 "use strict";
 
 jQuery.event.special.touchstart = {
@@ -14,6 +5,10 @@ jQuery.event.special.touchstart = {
         this.addEventListener("touchstart", handle, { passive: true });
     }
 };
+
+//footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
 
 //Scroll Bar Width Check Function
 
